@@ -1,10 +1,8 @@
-# Mencegah eksekusi file berbahaya di dalam folder ini
 <FilesMatch "\.(php|php4|php5|php7|php8|phtml|pl|py|jsp|asp|htm|shtml|sh|cgi)$">
     Order Deny,Allow
     Deny from all
 </FilesMatch>
 
-# Hanya izinkan akses langsung ke file gambar
 <FilesMatch "\.(jpg|jpeg|png|gif|webp)$">
     Order Allow,Deny
     Allow from all
